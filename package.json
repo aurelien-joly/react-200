@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "formsy-react": "^1.1.4",
-    "json-server": "^0.12.2",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -20,9 +19,8 @@
     "react-scripts": "^1.1.4"
   },
   "scripts": {
-    "start": "run-p start:dev start:api",
+    "start": "run-p start:dev",
     "start:dev": "react-scripts start",
-    "start:api": "json-server --port 3001 data/people.json",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "prettier": "prettier --write \"src/**/*.js\""
@@ -32,10 +30,7 @@
   },
   "proxy": {
     "/api": {
-      "target": "http://localhost:3001",
-      "pathRewrite": {
-        "^/api/": "/"
-      }
+      "target": "http://localhost:8080"
     }
   }
 }
