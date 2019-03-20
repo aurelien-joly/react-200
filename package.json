@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "fetch-intercept": "^2.3.1",
     "formsy-react": "^1.1.4",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
